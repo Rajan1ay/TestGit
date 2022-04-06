@@ -1,0 +1,20 @@
+<!--<template>
+      
+    <lightning-card title={cardTitle}>
+     
+            <lightning-button label="Change private proprty value" onclick={ChangePrivateProperytHandler}></lightning-button>
+    </lightning-card>
+    
+</template>-->
+<template>
+    <lightning-card title="Bmi Calculator">
+        <lightning-input type="number" step="0.01" label="Height in meter" onchange={handleHeight}></lightning-input>
+        <lightning-input type="number" step="0.01" label="Weight in Kilo " onchange={handleWeight}></lightning-input>    
+        <lightning-button label="Bmi Calculator" onclick={bmiCalulatorMethod}></lightning-button>
+    </lightning-card>
+    <p>
+        <!--Yuor BMI is : {bmiResult}
+        used getter method in down-->
+        {bmiValue}
+    </p>
+</template>
