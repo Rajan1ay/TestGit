@@ -1,0 +1,24 @@
+<template>
+        <lightning-card title="Meeting Rooms">
+            <lightning-layout>
+            <lightning-layout-item size="4" padding="around-small">
+                    <ul> 
+                            <template for:each={meetinRoomInformation} for:item="room">
+                                <li key={room.roomName} style="padding:10px">
+                                    <!--Two way to handle call event first componenet creation tag just below commented line
+                                    <c-meeting-room-public meeting-room-info={room} show-room-info ontileclick={onTileSelectedHandler}></c-meeting-room-public>-->
+                                    <c-meeting-room-public meeting-room-info={room} show-room-info></c-meeting-room-public>
+                                    <!--showRoomInfo this is boolean public property. if only showRoomInfo pass it is true only  -->
+                                </li>
+                            </template>
+                        </ul>
+                                   
+            </lightning-layout-item>
+            <lightning-layout-item size="8" padding="around-small">
+                Yur are selected : {selectedMeetingRoom}
+            </lightning-layout-item>
+
+            </lightning-layout>
+    
+    </lightning-card>
+</template>
