@@ -203,6 +203,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.sunsun2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>AcquiredAccount__c.AcctId__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -264,6 +269,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Car__c.CarHaiBekar__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Car__c.CarRider__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
